@@ -1,0 +1,45 @@
+<section data-ng-controller="ChartAppController" class="chart-back">
+
+  <div class="left-panel col-sm-9">
+    <div class="panel panel-default chart-wrapper">
+      <div class="panel-heading">
+        <h1 class="panel-title">Sales under $1k</h1>
+        <p class="chart-message">Circle size = shipping costs</p>
+      </div>
+      <!-- panel-heading -->
+
+      <div class="panel panel-warning" ng-show="showWarning">
+        <div class="panel-body">
+          {{warning}}
+        </div>        
+      </div>
+      <!-- panel-warning -->
+
+      <div class="panel-body chart-holder">
+
+        <div saleschart data="salesData" class="scatterplotchart"></div>
+
+      </div>
+      <!-- panel-body -->
+    </div>  
+    <!-- panel -->
+  </div>
+  <!-- left-panel  -->
+
+  <div class="right-panel col-sm-3">
+    <div class="panel panel-default info-panel">
+      <div class="panel-heading">
+        <h1 class="panel-title">Sales details</h1>
+      </div>
+
+      <div class="panel-body chart-holder">
+      </div>
+    </div>
+
+  </div>
+  <!-- right-panel -->
+
+</section>
+
+
+
